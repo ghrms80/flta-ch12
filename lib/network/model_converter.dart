@@ -7,7 +7,7 @@ import 'package:recipes/network/recipe_model.dart';
 class ModelConverter implements Converter {
   // 2
   @override
-  Request ConvertRequest(Request request) {
+  Request convertRequest(Request request) {
     // 3
     final req = applyHeader(
       request,
@@ -59,7 +59,7 @@ class ModelConverter implements Converter {
   }
 
   @override
-  Response<BodyType> ConvertResponse<BodyType, InnerType>(Response response) {
+  Response<BodyType> convertResponse<BodyType, InnerType>(Response response) {
     // 1
     return decodeJson<BodyType, InnerType>(response);
   }
