@@ -6,7 +6,7 @@ part 'recipe_service.chopper.dart';
 
 const String apiId = '77e2510d';
 const String apiKey = 'aa92b790e63322651aefc27a92cd05fe';
-const String apiUrl = 'https://api.edamam.com/search';
+const String apiUrl = 'https://api.edamam.com';
 
 // 1
 @ChopperApi()
